@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yyshhhh</title>
+    <link rel="shortcut icon" href="logo.png">
+    <style type="text/css">
+        html, body{margin: 0; width: 100%;height: 100%;overflow: hidden;}
+        .body{position: relative;}
+        
+        .nav{float: left;position: relative; width: 60px;height: 100%;background-color: black; z-index: 1;}
+        .icon{display: block; width: 60px;height: 60px;box-sizing: border-box;border-bottom:solid 1px #555555;background-color: black;}
+        .icon:hover{background-color: #ff4d35;}
+        .icon img{height: 60px;width: 60px;}
+        #menu{position: relative;z-index: 1;}
+        .hidden{transform: translateY(-270px);transition:  transform .4s ease-in-out 0s;}
+        .show{transform: translateY(0px);transition:  transform .4s ease-in-out 0s;}
+        img {transform: rotate(0deg);transition: transform .25s ease-out 0s;}
+        .open img{transform: rotate(-180deg);}
+        .bottom_img{position: absolute;bottom: 0;height: 200px;width: 60px;}
+
+        .main{margin-left: 60px; height:100%; background-color: grey;}
+        .main-1{height: 100%;width: 2240px;position: relative;left:0;}
+        .close{position:absolute;right: 0;top: 0; width: 60px;height: 180px;background-color: black;}
+        .flipper {width: 320px;height:100%;float: left;}
+        .part{float: left; width: 320px;height:100%;position: relative;transform-style: preserve-3d;transition: 0.6s;}
+        .part a{width: 100%;height: 100%;display: block;}
+        .flipper:hover .part{transform: rotateY(180deg);}
+        .back,.front{position: absolute;left: 0;top: 0; width: 100%;height: 100%; backface-visibility: hidden;background-position: 50% 50%;}
+        .front{background-color: pink;}
+        .back{background-color: black;transform: rotateY(-180deg);}
+
+
+        .hide{display: none;}
+        .login_bg{position: absolute; z-index: 1;top:0; margin-left: 60px; height:100%;width: 100%; background-color:rgba(0,0,0,0.8);}
+        .login{position: absolute;left: 50%;top:50%;transform: translate(-50%,-50%); z-index: 2;color: white;font-family: Microsoft Yahei;}
+        .login .part1{margin-bottom: 30px;}
+        .login .icon1{float: left;vertical-align: bottom; height: 36px;width: 36px;}
+        .login .account{background:url(result.png);  background-position: 0px 0px;}
+        .login .password{background:url(result.png);background-position: 0px -46px;}
+        .login input{ display: inline-block; border:solid 1px rgba(255,255,255,0.7);outline:none;  border-left: none;margin: 0;padding: 0;padding-left: 12px; height: 36px;width:250px;box-sizing: border-box; background:none;color: white; }
+        .login button{margin-bottom: 20px; width: 284px;height: 48px;border:solid 1px rgba(255,255,255,0.7);background: none;color: white;font-size: 18px;}
+        .login button:hover,active{background-color: rgba(255,255,255,0.7);color: black;}
+        .login a {color: rgba(255,255,255,0.7);text-decoration: none;}
+        .login .aright{float:right;}
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="icon" id="menu">
+            <img src="icon_menu.png">
+        </div>
+        <div class="hidden">
+            <a href="" class="icon" title="about">
+                <img src="icon about.png" >
+            </a>
+            <a href="" class="icon" title="contact">
+                <img src="icon contact.png">
+            </a>
+            <div class="icon" title="login">
+                <img src="icon_login.png">
+            </div>
+        </div>
+        <img src="yysh.png" class="bottom_img">
+    </div>
+
+    <div class="close">
+        <div class="icon">
+            <img src="icon_close.png">
+        </div>
+        <a class="icon">
+            <img src="icon_pre.png">
+        </a>
+        <a class="icon">
+            <img src="icon_behind.png">
+        </a>
+    </div>
+
+    <div class="main">
+        <div class="main-1">
+            <div class="flipper">
+                <div class="part">
+                    <a href="">
+                        <div class="front"></div>
+                        <div class="back"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="flipper">
+                <div class="part">
+                    <a href="">
+                        <div class="front"></div>
+                        <div class="back"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="flipper">
+                <div class="part">
+                    <a href="">
+                        <div class="front"></div>
+                        <div class="back"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="flipper">
+                <div class="part">
+                    <a href="">
+                        <div class="front"></div>
+                        <div class="back"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="flipper">
+                <div class="part">
+                    <a href="">
+                        <div class="front"></div>
+                        <div class="back"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="flipper">
+                <div class="part">
+                    <a href="">
+                        <div class="front"></div>
+                        <div class="back"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="flipper">
+                <div class="part">
+                    <a href="">
+                        <div class="front"></div>
+                        <div class="back"></div>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+ <div class="hide" id="logdiv">
+    <div class="login_bg"></div>
+    <div class="login">
+        <div class="part1">
+            <div class="icon1 account"></div>
+            <input type="" name="" class="black" value="   Account">
+        </div>
+        <div class="part1">
+            <div class="icon1 password"></div>
+             <input type="" name="" class="black" value="   Password">
+        </div>
+        <button>Login</button>
+        <div>
+            <a href="" class="aleft">Forget Password?</a>
+            <a href="register.html" class="aright">Sign up</a>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript" src="jquery.js">
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+    var $menuhidden = $('#menu+div');
+    $('#menu').click(function() {
+        if ($menuhidden.hasClass('hidden')){
+            $menuhidden.addClass('show').removeClass('hidden');
+            $(this).children('img').attr('src','icon_close.png');
+            $(this).addClass('open');
+        }
+        else{
+            $menuhidden.addClass('hidden').removeClass('show');
+            $(this).children('img').attr('src','icon_menu.png');
+            $(this).removeClass('open');
+        }
+
+    $('[title=login]').click(function() {
+        $('#logdiv').toggleClass('hide');
+    });
+});
+    $('html').on('mousewheel', function(event) {
+        var index;
+        var left = $('.main-1').css('left');
+        index = left.indexOf('px');
+        left = parseInt(left.slice(0, index));
+        left += event.originalEvent.wheelDelta;
+
+        if (left < -2240) {
+            left = -2240;
+        }
+        if (left > 0) {
+            left = 0
+        }
+
+        $('.main-1').css('left', left + 'px');
+        event.preventDefault();
+    });
+
+
+    // if (menu.nextElementSibling.className  == "hidden") {
+    //  menu.nextElementSibling.className = "show";
+    //  var menuImg = menu.firstElementChild;
+    //  menuImg.src = "icon_close.png";
+    // }
+    //else{
+    //  menu.nextElementSibling.className = "hidden";
+    //  var menuImg = menu.firstElementChild;
+    //  menuImg.src = "icon_menu.png";
+    //}
+});
+
+</script>
+
+</body>
+</html>

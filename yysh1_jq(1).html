@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>yyshhhh</title>
-    <link rel="shortcut icon" href="logo.png">
+    <link rel="shortcut icon" href="http://images.yyshhhh.com/logo1.png">
     <style type="text/css">
         html, body{margin: 0; width: 100%;height: 100%;overflow: hidden;}
         .body{position: relative;}
-        
-        .nav{float: left;position: relative; width: 60px;height: 100%;background-color: black; z-index: 1;}
-        .icon{display: block; width: 60px;height: 60px;box-sizing: border-box;border-bottom:solid 1px #555555;background-color: black;}
-        .icon:hover{background-color: #ff4d35;}
+
+        .nav{float: left;position: relative; width: 60px;height: 100%;background-color: white; z-index: 1;}
+        .icon{display: block; width: 60px;height: 60px;box-sizing: border-box;border-bottom:solid 1px #eeeeee;background-color: #e2e2e2;}
+        .icon:hover{background-color: #8bddff;}
         .icon img{height: 60px;width: 60px;}
         #menu{position: relative;z-index: 1;}
         .hidden{transform: translateY(-270px);transition:  transform .4s ease-in-out 0s;}
@@ -19,16 +19,22 @@
         .open img{transform: rotate(-180deg);}
         .bottom_img{position: absolute;bottom: 0;height: 200px;width: 60px;}
 
-        .main{margin-left: 60px; height:100%; background-color: grey;}
+        .main{margin-left: 60px; height:100%; background-color: #eeeeee;}
         .main-1{height: 100%;width: 2240px;position: relative;left:0;}
-        .close{position:absolute;right: 0;top: 0; width: 60px;height: 180px;background-color: black;}
-        .flipper {width: 320px;height:100%;float: left;}
-        .part{float: left; width: 320px;height:100%;position: relative;transform-style: preserve-3d;transition: 0.6s;}
+        .close{position:absolute;right: 0;top: 0; z-index: 1; width: 60px;height: 180px;background-color: black;}
+        .flipper {position: relative; margin: 60px 0 60px 60px; width: 320px; height: calc(100% - 120px); float: left;}
+        .part{float: left; box-shadow: 0 2px 2px #dddddd; width: 320px;height:100%;position: relative;transform-style: preserve-3d;transition: 0.6s;}
         .part a{width: 100%;height: 100%;display: block;}
         .flipper:hover .part{transform: rotateY(180deg);}
-        .back,.front{position: absolute;left: 0;top: 0; width: 100%;height: 100%; backface-visibility: hidden;background-position: 50% 50%;}
-        .front{background-color: pink;}
-        .back{background-color: black;transform: rotateY(-180deg);}
+        .back,.front{position: absolute;left: 0;top: 0; width: 100%;height: 100%; backface-visibility: hidden;background-position: 50% 50%; background-size: cover; background-repeat: no-repeat;}
+        .front{background-color: white; overflow: hidden;}
+        .back{background-color: white;transform: rotateY(-180deg);}
+        .flipper img{ width: auto; height: auto; max-width: 100%; max-height: 100%; text-align: center; vertical-align: middle; margin: 0 auto;}
+        .flipper .title1{font:20px/40px Arial; color: #666666; text-align: center;}
+        .flipper .title2{font:16px/40px Arial; color: #666666; text-align: center;}
+        .flipper .seperator{margin: 0 auto; width: 20px; height: 2px; background-color: #8deeff;}
+        .flipper2 .front{background: url(w-a.png); background-position: 50% 50%;  background-repeat: no-repeat;}
+        .flipper2 .title1{font:20px/40px Microsoft Yahei; color: #666666; text-align: center;}
 
 
         .hide{display: none;}
@@ -61,7 +67,7 @@
                 <img src="icon_login.png">
             </div>
         </div>
-        <img src="yysh.png" class="bottom_img">
+        <img src="http://images.yyshhhh.com/yysh1.png" class="bottom_img">
     </div>
 
     <div class="close">
@@ -81,60 +87,33 @@
             <div class="flipper">
                 <div class="part">
                     <a href="">
-                        <div class="front"></div>
-                        <div class="back"></div>
+                        <div class="front" style="background: url(w-icon.png);"></div>
+                        <div class="back">
+                            <div class="text">
+                                <div class="title1">BLUELULULU</div>
+                                <div class="seperator"></div>
+                                <div class="title2">ICON</div>
+                            </div>
+                        </div>
                     </a>
                 </div>
             </div>
-            <div class="flipper">
+            <div class="flipper flipper2">
                 <div class="part">
                     <a href="">
                         <div class="front"></div>
-                        <div class="back"></div>
+                        <div class="back">
+                            <div class="text">
+                                <div class="title1">人家敲可爱</div>
+                                <div class="seperator"></div>
+                                <div class="title2">ICON</div>
+                            </div>
+                        </div>
                     </a>
                 </div>
             </div>
-            <div class="flipper">
-                <div class="part">
-                    <a href="">
-                        <div class="front"></div>
-                        <div class="back"></div>
-                    </a>
-                </div>
-            </div>
-            <div class="flipper">
-                <div class="part">
-                    <a href="">
-                        <div class="front"></div>
-                        <div class="back"></div>
-                    </a>
-                </div>
-            </div>
-            <div class="flipper">
-                <div class="part">
-                    <a href="">
-                        <div class="front"></div>
-                        <div class="back"></div>
-                    </a>
-                </div>
-            </div>
-            <div class="flipper">
-                <div class="part">
-                    <a href="">
-                        <div class="front"></div>
-                        <div class="back"></div>
-                    </a>
-                </div>
-            </div>
-            <div class="flipper">
-                <div class="part">
-                    <a href="">
-                        <div class="front"></div>
-                        <div class="back"></div>
-                    </a>
-                </div>
-            </div>
-            
+
+
         </div>
     </div>
 
@@ -210,6 +189,23 @@ $(document).ready(function() {
     //  menuImg.src = "icon_menu.png";
     //}
 });
+
+//水平垂直居中
+$(window).resize(function(){
+    $(".flipper .text").css({
+        position: "absolute",
+        left: ($(".flipper .text").parent().outerWidth() - $(".flipper .text").outerWidth())/2,
+        top: ($(".flipper .text").parent().outerHeight() - $(".flipper .text").outerHeight())/2
+    });
+});
+$(function(){
+    $(".flipper .text").css({
+        position: "absolute",
+        left: ($(".flipper .text").parent().outerWidth() - $(".flipper .text").outerWidth())/2,
+        top: ($(".flipper .text").parent().outerHeight() - $(".flipper .text").outerHeight())/2
+    });
+});
+
 
 </script>
 

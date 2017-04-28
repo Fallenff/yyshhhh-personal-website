@@ -8,7 +8,7 @@
         html, body{margin: 0; width: 100%;height: 100%;overflow: hidden;}
         .body{position: relative;}
 
-        .nav{float: left;position: relative; width: 60px;height: 100%;background-color: white; z-index: 1;}
+        .nav{float: left;position: relative; box-shadow: 2px 0 2px #dddddd; width: 60px;height: 100%;background-color: white; z-index: 1;}
         .icon{display: block; width: 60px;height: 60px;box-sizing: border-box;border-bottom:solid 1px #eeeeee;background-color: #e2e2e2;}
         .icon:hover{background-color: #8bddff;}
         .icon img{height: 60px;width: 60px;}
@@ -20,21 +20,30 @@
         .bottom_img{position: absolute;bottom: 0;height: 200px;width: 60px;}
 
         .main{margin-left: 60px; height:100%; background-color: #eeeeee;}
-        .main-1{height: 100%;width: 2240px;position: relative;left:0;}
+        .main-1{height: 100%;width: 3000px;position: relative;left:0;}
         .close{position:absolute;right: 0;top: 0; z-index: 1; width: 60px;height: 180px;background-color: black;}
-        .flipper {position: relative; margin: 60px 0 60px 60px; width: 320px; height: calc(100% - 120px); float: left;}
-        .part{float: left; box-shadow: 0 2px 2px #dddddd; width: 320px;height:100%;position: relative;transform-style: preserve-3d;transition: 0.6s;}
+        .flipper {position: relative; margin: 50px 0 50px 50px; width: 320px; height: calc(100% - 100px); float: left;}
+        .part{float: left; box-shadow: 2px 2px 4px #dddddd, -2px 2px 4px #dddddd; width: 320px;height:100%;position: relative;transform-style: preserve-3d;transition: 0.6s;}
         .part a{width: 100%;height: 100%;display: block;}
         .flipper:hover .part{transform: rotateY(180deg);}
         .back,.front{position: absolute;left: 0;top: 0; width: 100%;height: 100%; backface-visibility: hidden;background-position: 50% 50%; background-size: cover; background-repeat: no-repeat;}
         .front{background-color: white; overflow: hidden;}
         .back{background-color: white;transform: rotateY(-180deg);}
         .flipper img{ width: auto; height: auto; max-width: 100%; max-height: 100%; text-align: center; vertical-align: middle; margin: 0 auto;}
+        .flipper .text{position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
         .flipper .title1{font:20px/40px Arial; color: #666666; text-align: center;}
         .flipper .title2{font:16px/40px Arial; color: #666666; text-align: center;}
         .flipper .seperator{margin: 0 auto; width: 20px; height: 2px; background-color: #8deeff;}
-        .flipper2 .front{background: url(w-a.png); background-position: 50% 50%;  background-repeat: no-repeat;}
-        .flipper2 .title1{font:20px/40px Microsoft Yahei; color: #666666; text-align: center;}
+        .flipper1 .front{background: url(w-icon.png); background-position: 50% 50%; background-size: cover; background-repeat: no-repeat;}
+        .flipper2 .front{background: url(w-a.png); background-position: 50% 50%; background-size: cover; background-repeat: no-repeat;}
+        .flipper2 .title1, .flipper3 .title1, .flipper4 .title1, .flipper6 .title1, .flipper7 .title1, .flipper8 .title1{font:20px/40px Microsoft Yahei; color: #666666; text-align: center;}
+        .flipper3 .front{background: url(w-app1.png); background-position: 50% 50%; background-size: cover; background-repeat: no-repeat;}
+        .flipper4 .front{background: url(w-app2.png); background-position: 50% 50%; background-size: cover; background-repeat: no-repeat;}
+        .flipper5 .front{background: url(w-app3.png); background-position: 50% 50%; background-size: cover; background-repeat: no-repeat;}
+        .flipper6 .front{background: url(w-hua.png); background-position: 50% 50%; background-size: cover; background-repeat: no-repeat;}
+        .flipper7 .front{background: url(w-ph.png); background-position: 50% 50%; background-size: cover; background-repeat: no-repeat;}
+        .flipper8 .front{background: url(w-arch.png); background-position: 50% 50%; background-size: cover; background-repeat: no-repeat;}
+
 
 
         .hide{display: none;}
@@ -84,10 +93,10 @@
 
     <div class="main">
         <div class="main-1">
-            <div class="flipper">
+            <div class="flipper flipper1">
                 <div class="part">
                     <a href="">
-                        <div class="front" style="background: url(w-icon.png);"></div>
+                        <div class="front"></div>
                         <div class="back">
                             <div class="text">
                                 <div class="title1">BLUELULULU</div>
@@ -107,6 +116,90 @@
                                 <div class="title1">人家敲可爱</div>
                                 <div class="seperator"></div>
                                 <div class="title2">ICON</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="flipper flipper3">
+                <div class="part">
+                    <a href="">
+                        <div class="front"></div>
+                        <div class="back">
+                            <div class="text">
+                                <div class="title1">云游</div>
+                                <div class="seperator"></div>
+                                <div class="title2">APP</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="flipper flipper4">
+                <div class="part">
+                    <a href="">
+                        <div class="front"></div>
+                        <div class="back">
+                            <div class="text">
+                                <div class="title1">花鸟</div>
+                                <div class="seperator"></div>
+                                <div class="title2">APP</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="flipper flipper5">
+                <div class="part">
+                    <a href="">
+                        <div class="front"></div>
+                        <div class="back">
+                            <div class="text">
+                                <div class="title1">COLORFUL WORLD</div>
+                                <div class="seperator"></div>
+                                <div class="title2">APP</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="flipper flipper6">
+                <div class="part">
+                    <a href="">
+                        <div class="front"></div>
+                        <div class="back">
+                            <div class="text">
+                                <div class="title1">甜蜜蜜</div>
+                                <div class="seperator"></div>
+                                <div class="title2">DRAWING</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="flipper flipper7">
+                <div class="part">
+                    <a href="">
+                        <div class="front"></div>
+                        <div class="back">
+                            <div class="text">
+                                <div class="title1">风月</div>
+                                <div class="seperator"></div>
+                                <div class="title2">PHOTOGRAGH</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="flipper flipper8">
+                <div class="part">
+                    <a href="">
+                        <div class="front"></div>
+                        <div class="back">
+                            <div class="text">
+                                <div class="title1">造·作</div>
+                                <div class="seperator"></div>
+                                <div class="title2">ARCHITECTURE</div>
                             </div>
                         </div>
                     </a>
@@ -166,8 +259,8 @@ $(document).ready(function() {
         left = parseInt(left.slice(0, index));
         left += event.originalEvent.wheelDelta;
 
-        if (left < -2240) {
-            left = -2240;
+        if (left < -(370 * 8 + 110 - $(window).width())) {
+            left = -(370 * 8 + 110 - $(window).width());
         }
         if (left > 0) {
             left = 0
@@ -191,6 +284,7 @@ $(document).ready(function() {
 });
 
 //水平垂直居中
+/*
 $(window).resize(function(){
     $(".flipper .text").css({
         position: "absolute",
@@ -205,7 +299,7 @@ $(function(){
         top: ($(".flipper .text").parent().outerHeight() - $(".flipper .text").outerHeight())/2
     });
 });
-
+*/
 
 </script>
 
